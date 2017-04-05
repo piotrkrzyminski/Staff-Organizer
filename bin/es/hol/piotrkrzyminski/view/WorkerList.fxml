@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="1400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.hol.piotrkrzyminski.view.WorkerListController">
+   <children>
+      <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="800.0" prefWidth="1400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="207.0" prefWidth="1617.0" text="Lista pracowników" textAlignment="CENTER" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <TableView fx:id="workerTableView" layoutX="241.0" layoutY="233.0" maxWidth="1.7976931348623157E308" prefHeight="700.0" prefWidth="1400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="workerIDTableColumn" prefWidth="75.0" text="Id" />
+                <TableColumn fx:id="workerImieTableColumn" prefWidth="248.0" text="Imię" />
+                  <TableColumn fx:id="workerNazwiskoTableColumn" prefWidth="389.0" text="Nazwisko" />
+                  <TableColumn fx:id="workerPlecTableColumn" minWidth="7.0" prefWidth="57.0" text="Płeć" />
+                  <TableColumn fx:id="workerNrDzialuTableColumn" prefWidth="118.0" text="Numer dzialu" />
+                  <TableColumn fx:id="workerPlacaTableColumn" prefWidth="166.0" text="Płaca" />
+                  <TableColumn fx:id="workerWiekTableColumn" prefWidth="93.0" text="Wiek" />
+                  <TableColumn fx:id="workerLiczbaDzieciTableColumn" prefWidth="118.0" text="Liczba dzieci" />
+                  <TableColumn fx:id="workerStanCywilnyTableColumn" prefWidth="135.0" text="Stan cywilny" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
